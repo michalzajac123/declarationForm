@@ -157,7 +157,7 @@ export default async function pdfCreator(formData: State): Promise<void> {
     y -= 25
 
     if (formData.phoneNumber) {
-      drawText(`nr telefonu z kierunkowym: ${formData.phoneNumber}`, margin, y, { bold: true })
+      drawText(`numer telefonu: ${formData.phoneNumber}`, margin, y, { bold: true })
     }
     if (formData.email) {
       drawText(`mail: ${formData.email}`, margin + 200, y, { bold: true })
